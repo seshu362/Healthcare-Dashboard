@@ -53,26 +53,28 @@ cd healthcare-dashboard
 
 
 ## Project Structure
-healthcare-dashboard/
-├── public/                # Public assets and HTML template
-├── src/                   # Source code
-│   ├── assets/            # Static assets like images
-│   ├── components/        # React components
-│   │   ├── ActivityFeed/        # Activity chart component
-│   │   ├── AnatomySection/      # Human body illustration component
-│   │   ├── AppointmentCard/     # Individual appointment card component
-│   │   ├── CalendarView/        # Calendar and schedule view component
-│   │   ├── DashboardMainContent/ # Main dashboard layout component
-│   │   ├── HealthStatusCards/   # Health status indicators component
-│   │   ├── Sidebar/             # Navigation sidebar component
-│   │   └── SimpleAppointmentCard/ # Appointment card for schedule
-│   ├── App.js            # Root application component
-│   ├── App.css           # Global styles
-│   ├── index.js          # Application entry point
-│   └── index.css         # Global CSS reset
-├── .gitignore            # Git ignore file
-├── package.json          # Project dependencies and scripts
-└── README.md             # Project documentation
+    ```
+        healthcare-dashboard/
+        ├── public/                # Public assets and HTML template
+        ├── src/                   # Source code
+        │   ├── assets/            # Static assets like images
+        │   ├── components/        # React components
+        │   │   ├── ActivityFeed/        # Activity chart component
+        │   │   ├── AnatomySection/      # Human body illustration component
+        │   │   ├── AppointmentCard/     # Individual appointment card component
+        │   │   ├── CalendarView/        # Calendar and schedule view component
+        │   │   ├── DashboardMainContent/ # Main dashboard layout component
+        │   │   ├── HealthStatusCards/   # Health status indicators component
+        │   │   ├── Sidebar/             # Navigation sidebar component
+        │   │   └── SimpleAppointmentCard/ # Appointment card for schedule
+        │   ├── App.js            # Root application component
+        │   ├── App.css           # Global styles
+        │   ├── index.js          # Application entry point
+        │   └── index.css         # Global CSS reset
+        ├── .gitignore            # Git ignore file
+        ├── package.json          # Project dependencies and scripts
+        └── README.md             # Project documentation
+    ```
 
 ## Component Breakdown
 
