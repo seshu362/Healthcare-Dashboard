@@ -4,7 +4,7 @@ import { GiTooth } from 'react-icons/gi';
 import { FiEye } from 'react-icons/fi';
 import { FaPencilAlt, FaHeart, FaUser } from 'react-icons/fa';
 import { FaHandRock } from "react-icons/fa";
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+
 
 const CalendarView = () => {
   return (

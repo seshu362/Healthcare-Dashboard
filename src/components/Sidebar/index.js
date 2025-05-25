@@ -1,6 +1,5 @@
-// Sidebar.js
 import React, { useState } from 'react';
-import './index.css'; // Changed from index.css to Sidebar.css
+import './index.css'; 
 import { 
   RiDashboardLine,
   RiHistoryLine, 
