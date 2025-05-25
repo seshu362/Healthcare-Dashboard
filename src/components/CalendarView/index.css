@@ -1,0 +1,259 @@
+.calendarView-calendar-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Calendar Grid */
+.calendarView-calendar-grid {
+  background-color: transparent;
+  border-radius: 16px;
+  overflow: hidden;
+  padding-left: 0px !important;
+  padding: 16px;
+}
+
+.calendarView-weekday-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 16px;
+}
+
+.calendarView-weekday-cell {
+  text-align: center;
+}
+
+.calendarView-day-label {
+  color: #2d2995;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.calendarView-date-label {
+  color: #2d2995;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.calendarView-time-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.calendarView-time-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+}
+
+.calendarView-time-label {
+  color: #8a8d9c;
+  font-size: 12px;
+  text-align: center;
+}
+
+.calendarView-time-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendarView-time-pill {
+  min-width: 36px;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 13px;
+  font-size: 12px;
+  color: #646a80;
+  text-align: center;
+}
+
+.calendarView-empty {
+  color: #a0a4ae;
+}
+
+.calendarView-blue {
+  background-color: #2d2995;
+  color: white;
+  width: 55px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.calendarView-purple {
+  background-color: #7f7fe6;
+  color: white;
+  width: 55px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Appointment Cards */
+.calendarView-appointment-card-container {
+  display: flex;
+  gap: 16px;
+}
+
+.calendarView-appointment-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  border-radius: 16px;
+  color: white;
+}
+
+.calendarView-blue-card {
+  background-color: #2d2995;
+}
+
+.calendarView-appointment-card-2 {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  border-radius: 16px;
+  color: rgb(238, 238, 217);
+}
+
+.calendarView-purple-card {
+  background-color: #f0f1fa;
+}
+
+.calendarView-appointment-card-2 h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 6px 0;
+  color: #2d3142;
+}
+
+.calendarView-appointment-card-2 p {
+  font-size: 14px;
+  margin: 0 0 3px 0;
+  opacity: 0.85;
+  color: #646a80;
+}
+
+.calendarView-appointment-info h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 6px 0;
+}
+
+.calendarView-appointment-info p {
+  font-size: 12px;
+  margin: 0 0 3px 0;
+  opacity: 0.85;
+}
+
+.calendarView-card-icon {
+  font-size: 24px;
+}
+
+/* Upcoming Schedule */
+.calendarView-upcoming-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.calendarView-upcoming-schedule h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d2995;
+  margin-top: 5px !important;
+  margin: 0;
+}
+
+.calendarView-schedule-day {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.calendarView-schedule-day h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #646a80;
+  margin: 0;
+}
+
+.calendarView-schedule-cards {
+  display: flex;
+  gap: 16px;
+
+}
+
+.calendarView-schedule-card {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f1fa;
+  border-radius: 12px;
+  padding: 16px 20px;
+
+  height: 100px;
+}
+
+
+
+.calendarView-schedule-info h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2d3142;
+  margin: 0 0 4px 0;
+}
+
+.calendarView-schedule-info p {
+  font-size: 12px;
+  color: #646a80;
+  margin: 0;
+}
+
+.calendarView-schedule-icon {
+  color: #646a80;
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .calendarView-calendar-grid {
+    overflow-x: auto;
+  }
+  
+  .calendarView-weekday-row,
+  .calendarView-time-row {
+    min-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendarView-appointment-card-container,
+  .calendarView-schedule-cards {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .calendarView-schedule-card {
+    border: 2px solid rebeccapurple;
+  } 
+  
+  .calendarView-appointment-card,
+  .calendarView-schedule-card {
+    padding: 14px 16px;
+  }
+  
+  .calendarView-appointment-info h3,
+  .calendarView-schedule-info h4 {
+    font-size: 15px;
+  }
+  
+  .calendarView-appointment-info p,
+  .calendarView-schedule-info p {
+    font-size: 13px;
+  }
+}

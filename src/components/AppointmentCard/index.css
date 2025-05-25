@@ -1,0 +1,60 @@
+.appointment-card {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-radius: 16px;
+  color: white;
+}
+
+.appointment-card.dentist {
+  background-color: #3a36db;
+}
+
+.appointment-card.physiotherapy {
+  background-color: #7f7fe6;
+}
+
+.appointment-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.appointment-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.appointment-card-time {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.appointment-card-doctor {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.appointment-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .appointment-card {
+    padding: 14px 16px;
+  }
+  
+  .appointment-card-title {
+    font-size: 15px;
+  }
+  
+  .appointment-card-time,
+  .appointment-card-doctor {
+    font-size: 13px;
+  }
+}

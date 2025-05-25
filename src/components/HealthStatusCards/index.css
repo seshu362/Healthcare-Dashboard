@@ -1,0 +1,106 @@
+.health-status-cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.health-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 12px;
+  background-color: #f9faff;
+  border-radius: 12px;
+}
+
+.health-card-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.lungs .health-card-icon {
+  color: #e74c3c;
+}
+
+.teeth .health-card-icon {
+  color: #25c685;
+}
+
+.bone .health-card-icon {
+  color: #f39c12;
+}
+
+.health-card-content {
+  flex: 1;
+}
+
+.health-card-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2d3142;
+  margin: 0 0 4px 0;
+}
+
+.health-card-date {
+  font-size: 12px;
+  color: #a0a4ae;
+  margin: 0 0 8px 0;
+}
+
+.health-card-status {
+  margin-top: 4px;
+}
+
+.status-bar {
+  height: 6px;
+  background-color: #eaedf6;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.status-fill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.lungs-fill {
+  width: 75%;
+  background-color: #e74c3c;
+}
+
+.teeth-fill {
+  width: 75%;
+  background-color: #25c685;
+}
+
+.bone-fill {
+  width: 75%;
+  background-color: #f39c12;
+}
+
+.details-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #2d2995;
+  cursor: pointer;
+}
+
+.details-link span {
+  margin-right: 2px;
+}
+
+@media (max-width: 768px) {
+  .health-status-cards {
+    margin-top: 16px;
+  }
+}
