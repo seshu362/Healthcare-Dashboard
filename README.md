@@ -2,7 +2,7 @@
 
 A pixel-perfect, responsive React implementation of a healthcare dashboard user interface.
 
-![Healthcare Dashboard Preview](https://i.ibb.co/B2DdGkgF/Screenshot-2025-05-23-at-3-31-31-PM.png)
+![Healthcare Dashboard Preview](https://res.cloudinary.com/dw7dhefpb/image/upload/v1748151213/Screenshot_2025-05-25_110259_sgkc3o.png)
 
 ## Table of Contents
 - [Overview](#overview)
@@ -12,7 +12,7 @@ A pixel-perfect, responsive React implementation of a healthcare dashboard user 
 - [Technologies Used](#technologies-used)
 - [Implementation Details](#implementation-details)
 - [Responsive Design](#responsive-design)
-- [Future Enhancements](#future-enhancements)
+- [Live Demo](#live-demo)
 
 ## Overview
 
@@ -32,32 +32,37 @@ This project is a static React implementation of a healthcare dashboard UI desig
 ## Installation
 
 1. Clone the repository:
-git clone https://github.com/yourusername/healthcare-dashboard.git
-cd healthcare-dashboard
+    ```
+      git clone https://github.com/seshu362/Healthcare-Dashboard.git
+      cd healthcare-dashboard
+    ```
+
+
+3. Install dependencies:
+    ```
+      npm install
+    ```
 
 
 
-2. Install dependencies:
-    npm install
+
+5. Start the development server:
+    ```
+      npm start
+    ```
 
 
-
-3. Start the development server:
-    npm start
-
-
-
-4. Open your browser and navigate to:
-    http://localhost:3000
-
+7. Open your browser and navigate to:
+    ```
+      http://localhost:3000
+    ```
 
 
 ## Project Structure
-    ```
+    
         healthcare-dashboard/
         ├── public/                # Public assets and HTML template
         ├── src/                   # Source code
-        │   ├── assets/            # Static assets like images
         │   ├── components/        # React components
         │   │   ├── ActivityFeed/        # Activity chart component
         │   │   ├── AnatomySection/      # Human body illustration component
@@ -74,7 +79,7 @@ cd healthcare-dashboard
         ├── .gitignore            # Git ignore file
         ├── package.json          # Project dependencies and scripts
         └── README.md             # Project documentation
-    ```
+    
 
 ## Component Breakdown
 
@@ -136,12 +141,10 @@ Key responsive features include:
 - Reordering of content for smaller screens
 - Adjusted spacing and font sizes for readability
 
-## Future Enhancements
 
-Potential future improvements could include:
-- Adding interactive functionality to the dashboard elements
-- Implementing state management for user interactions
-- Adding dark mode support
-- Creating additional dashboard views and screens
-- Connecting to a backend API for real data
+
+## <a id="live-demo"></a>Live Demo
+
+You can view a live demo of the Healthcare Dashboard at: [https://seshu-healthcare-dashboard.vercel.app/](https://seshu-healthcare-dashboard.vercel.app/)
+
 
